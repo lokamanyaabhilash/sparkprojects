@@ -85,7 +85,7 @@ df3.createOrReplaceTempView("events")
 
   val result5= df3
     .withColumn("total_time", col("out_time").minus(col("in_time")))
-    .select("event_day", "emp_id", "total_time").groupBy("emp_id","event_day").sum("total_time")
+    .select("event_day", "emp_id", "total_time").groupBy("emp_id","event_day").sum("t
 result5.show()
-
+\\lokamanya Abhilash Pragada
 }
